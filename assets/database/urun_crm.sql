@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 18, 2022 at 02:46 AM
+-- Generation Time: Jul 25, 2022 at 11:51 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.3.33
 
@@ -59,7 +59,48 @@ INSERT INTO `log` (`id`, `name`, `username`, `tablename`, `action`, `description
 (13, 'Syahrur Ramadhan', 'admin', 'user', 'Logout', 'Logout Successful', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0', '2022-07-17 00:49:51'),
 (14, 'Syahrur Ramadhan', 'admin', 'user', 'Logout', 'Logout Successful', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0', '2022-07-17 00:51:46'),
 (15, 'Syahrur Ramadhan', 'admin', 'user', 'Logout', 'Logout Successful', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0', '2022-07-17 00:53:20'),
-(16, 'Syahrur Ramadhan', 'admin', 'user', 'Logout', 'Logout Successful', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0', '2022-07-17 23:00:42');
+(16, 'Syahrur Ramadhan', 'admin', 'user', 'Logout', 'Logout Successful', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0', '2022-07-17 23:00:42'),
+(17, 'Syahrur Ramadhan', 'admin', 'user', 'Login', 'Login Successful', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:103.0) Gecko/20100101 Firefox/103.0', '2022-07-18 14:49:23'),
+(18, 'Syahrur Ramadhan', 'admin', 'user', 'Logout', 'Logout Successful', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:103.0) Gecko/20100101 Firefox/103.0', '2022-07-18 15:15:56'),
+(19, 'Syahrur Ramadhan', 'admin', 'user', 'Login', 'Login Successful', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:103.0) Gecko/20100101 Firefox/103.0', '2022-07-18 15:16:41'),
+(20, 'Syahrur Ramadhan', 'admin', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-18 15:20:55'),
+(21, 'Syahrur Ramadhan', 'admin', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-18 17:06:44'),
+(22, 'Syahrur Ramadhan', 'admin', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-18 17:12:07'),
+(23, 'Syahrur Ramadhan', 'admin', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-18 17:27:36'),
+(24, 'Syahrur Ramadhan', 'admin', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-18 21:27:10'),
+(25, 'Syahrur Ramadhan', 'admin', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-19 11:06:37'),
+(26, 'Syahrur Ramadhan', 'admin', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-19 11:39:45'),
+(27, 'Syahrur Ramadhan', 'admin', 'user', 'Logout', 'Logout Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-19 14:27:56'),
+(28, 'Iyan ', 'iyan', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-19 14:28:05'),
+(29, 'Iyan ', 'iyan', 'user', 'Logout', 'Logout Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-19 15:24:55'),
+(30, 'Darmanto ', 'darmanto', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-19 15:25:00'),
+(31, 'Darmanto ', 'darmanto', 'user', 'Logout', 'Logout Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-19 15:57:47'),
+(32, 'Budiman Indrajaya', 'budiman', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-19 15:57:55'),
+(33, 'Iyan ', 'iyan', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-19 16:52:14'),
+(34, 'Iyan ', 'iyan', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-19 17:02:13'),
+(35, 'Iyan ', 'iyan', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-19 21:32:22'),
+(36, 'Iyan ', 'iyan', 'user', 'Logout', 'Logout Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-19 22:18:37'),
+(37, 'Darmanto ', 'darmanto', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-19 22:18:43'),
+(38, 'Iyan ', 'iyan', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-20 09:43:53'),
+(39, 'Iyan ', 'iyan', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-20 10:08:51'),
+(40, 'Iyan ', 'iyan', 'user', 'Logout', 'Logout Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-20 11:10:56'),
+(41, 'Iyan ', 'iyan', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-20 11:11:51'),
+(42, 'Iyan ', 'iyan', 'user', 'Logout', 'Logout Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-20 13:55:35'),
+(43, 'Budiman Indrajaya', 'budiman', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-20 13:55:42'),
+(44, 'Budiman Indrajaya', 'budiman', 'user', 'Logout', 'Logout Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-20 14:26:17'),
+(45, 'Darmanto ', 'darmanto', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-20 14:26:35'),
+(46, 'Darmanto ', 'darmanto', 'user', 'Logout', 'Logout Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-20 17:59:18'),
+(47, 'Iyan ', 'iyan', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-20 18:00:20'),
+(48, 'Iyan ', 'iyan', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-21 08:41:48'),
+(49, 'Iyan ', 'iyan', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-21 13:38:15'),
+(50, 'Iyan ', 'iyan', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-22 08:11:45'),
+(51, 'Iyan ', 'iyan', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-22 13:32:08'),
+(52, 'Iyan ', 'iyan', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-22 17:26:11'),
+(53, 'Iyan ', 'iyan', 'user', 'Logout', 'Logout Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-22 17:26:24'),
+(54, 'Budiman Indrajaya', 'budiman', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-22 17:26:28'),
+(55, 'Iyan ', 'iyan', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-24 17:15:42'),
+(56, 'Iyan ', 'iyan', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-24 18:02:52'),
+(57, 'Iyan ', 'iyan', 'user', 'Login', 'Login Successful', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36', '2022-07-25 16:10:51');
 
 -- --------------------------------------------------------
 
@@ -132,6 +173,7 @@ CREATE TABLE `task` (
   `description` text NOT NULL,
   `status` varchar(1) NOT NULL COMMENT 'D = Draft,\r\nS = Submitted,\r\nC = Checked,\r\nA = Approved,\r\nR = Rejected',
   `flag` tinyint(1) NOT NULL,
+  `read` tinyint(1) NOT NULL,
   `createby` varchar(50) NOT NULL,
   `createdate` datetime DEFAULT current_timestamp(),
   `updateby` varchar(50) NOT NULL,
@@ -142,9 +184,13 @@ CREATE TABLE `task` (
 -- Dumping data for table `task`
 --
 
-INSERT INTO `task` (`id`, `name`, `description`, `status`, `flag`, `createby`, `createdate`, `updateby`, `updatedate`) VALUES
-(1, 'Pengajuan Pembelian Laptop', 'Untuk kantor', 'D', 1, 'admin', '2022-07-14 01:59:06', '', '2022-07-13 20:58:23'),
-(2, 'Pengajuan Pembelian Alat Tulis Kantor', 'Diperuntukkan kepada tim HC', '', 1, 'iyan', '2022-07-17 23:59:18', '', NULL);
+INSERT INTO `task` (`id`, `name`, `description`, `status`, `flag`, `read`, `createby`, `createdate`, `updateby`, `updatedate`) VALUES
+(1, 'Pengajuan Pembelian Laptop', 'Untuk kantor', 'S', 1, 0, 'iyan', '2022-07-14 01:59:06', 'iyan', '2022-07-13 20:58:23'),
+(2, 'Pengajuan Pembelian Alat Tulis Kantor', 'Diperuntukkan kepada tim HC & HRD', 'R', 1, 0, 'iyan', '2022-07-17 23:59:18', 'iyan', NULL),
+(3, 'Pengajuan Pembelian Proyektor', 'Untuk kebutuhan meeting', 'S', 1, 0, 'firosuddin', '2022-07-18 17:03:46', 'iyan', NULL),
+(4, 'Pengajuan Pembelajaran Ilmu Muamalah', 'Untuk kebutuhan karyawan', 'A', 1, 0, 'iyan', '2022-07-19 13:48:29', 'iyan', NULL),
+(5, 'Pengajuan Pelatihan Programming', 'Untuk team web developer', 'C', 1, 0, 'iyan', '2022-07-19 14:33:50', 'iyan', NULL),
+(6, 'Pengajuan Rekreasi Perusahaan', 'Kebutuhan healing semua karyawan', 'D', 1, 0, 'iyan', '2022-07-21 14:57:25', '', NULL);
 
 -- --------------------------------------------------------
 
@@ -223,7 +269,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `log`
 --
 ALTER TABLE `log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT for table `persons`
@@ -241,7 +287,7 @@ ALTER TABLE `privilege`
 -- AUTO_INCREMENT for table `task`
 --
 ALTER TABLE `task`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `user`

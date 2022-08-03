@@ -5,7 +5,7 @@ class Task_model extends CI_Model
 {
 
 	var $table = 'task';
-	var $column_order = array('name', 'description', 'flag', null); //set column field database for datatable orderable
+	var $column_order = array('name', 'description', 'status', null); //set column field database for datatable orderable
 	var $column_search = array('name', 'description', 'createby'); //set column field database for datatable searchable just firstname , lastname , address are searchable
 	var $order = array('id' => 'desc'); // default order 
 
@@ -13,6 +13,16 @@ class Task_model extends CI_Model
 	{
 
 		$this->db->from($this->table);
+		if ($this->session->userdata('privilege') == '2') {
+			$this->db->where('flag', 1);
+			$this->db->where_in('status', array('C', 'A'));
+		} else if ($this->session->userdata('privilege') == '3') {
+			$this->db->where('flag', 1);
+			$this->db->where_in('status', array('C', 'S'));
+		} else {
+			$this->db->where('flag', 1);
+			$this->db->where('createby', $this->session->userdata('username'));
+		}
 
 		$i = 0;
 

@@ -458,7 +458,7 @@ hr {
 
 small,
 .small {
-  font-size: 80%;
+  font-size: 85%;
   font-weight: 400;
 }
 
@@ -2277,6 +2277,12 @@ select.form-control[multiple] {
 
 textarea.form-control {
   height: auto;
+  border-radius: 1.5rem;
+}
+
+textarea.form-control:focus {
+  height: auto;
+  border-radius: 1.5rem;
 }
 
 .form-group {
@@ -12135,13 +12141,13 @@ form.user .custom-checkbox.small label {
 }
 
 form.user .form-control-user {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   border-radius: 10rem;
   padding: 1.5rem 1rem;
 }
 
 form.user .btn-user {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   border-radius: 10rem;
   padding: 0.75rem 1rem;
 }

@@ -33,6 +33,18 @@ if (!function_exists('action_log')) {
     }
 }
 
+if (!function_exists('notification')) {
+    function notification($status, $read)
+    {
+        if ($status) {
+            $ci = &get_instance();
+
+            $data = $ci->db->get_where('task', array('status' => $status, 'read' => $read))->result_array();
+            return $data;
+        }
+    }
+}
+
 if (!function_exists('upload_image')) {
     function upload_image($field_name, $folder, $debug = FALSE)
     {

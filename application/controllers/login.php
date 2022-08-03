@@ -18,7 +18,7 @@ class Login extends CI_Controller
 			$this->form_validation->set_rules('username', 'Username', 'required|trim');
 			$this->form_validation->set_rules('password', 'Password', 'required|trim');
 
-			$this->load->view('login/login_view');
+			$this->load->view('login/logins');
 		} elseif ($this->session->userdata('check_login') == TRUE) {
 			redirect('home');
 			$data['title'] = 'Dashboard';
@@ -52,6 +52,7 @@ class Login extends CI_Controller
 						'id'          => $user['id'],
 						'name'        => $user['firstname'] . ' ' . $user['lastname'],
 						'username'    => $user['username'],
+						'photo'   	  => $user['photo'],
 						'privilege'   => $user['privilege']
 					);
 					$this->session->set_userdata($session);

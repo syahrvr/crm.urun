@@ -24,7 +24,7 @@ class Register extends CI_Controller
                 'title' => 'Registration'
             );
             $this->load->view('login/header', $data);
-            $this->load->view('login/registration');
+            $this->load->view('login/registers');
             $this->load->view('login/footer');
         } else {
             $data = array(
@@ -40,7 +40,7 @@ class Register extends CI_Controller
             );
 
             $this->db->insert('user', $data);
-            action_log($data('firstname') . ' ' . $data['lastname'], 'user', 'Create Account', 'Successfully Added New Account' . $data['username']);
+            action_log($data['firstname'] . ' ' . $data['lastname'], 'user', 'Create Account', 'Successfully Added New Account' . $data['username']);
 
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Congratulation! your account has been created. Please contact your administrator to activate your account!</div>');
             redirect('login');
