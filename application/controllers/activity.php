@@ -14,11 +14,11 @@ class Activity extends CI_Controller
 	{
 		$data = array(
 			'title' => 'Activity Log',
-			'css'	=> array('custom.css', 'dataTables.bootstrap.css'),
-			'js'	=> array('datatables/js/jquery.dataTables.min.js', 'datatables/js/dataTables.bootstrap.js', 'js/activity.js'),
-			'notif'		=> notification('S', false),
+			'css'	=> array('custom', 'dataTables.bootstrap'),
+			'js'	=> array('datatables/js/jquery.dataTables.min', 'datatables/js/dataTables.bootstrap', 'js/activity'),
+			'notif'	=> notification('S', false),
 			'user'  => $this->db->get_where('user', array('username' => $this->session->userdata('username'), 'flag' => 1))->row_array(),
-			'log'  => $this->db->get_where('log', array('username' => $this->session->userdata('username')))->result_array()
+			'log'   => $this->db->get_where('log', array('username' => $this->session->userdata('username')))->result_array()
 		);
 
 		$this->load->view('admin/header', $data);

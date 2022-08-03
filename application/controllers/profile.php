@@ -31,8 +31,8 @@ class Profile extends CI_Controller
             // Menampilkan halaman profile
             $data = array(
                 'title' => 'My Profile',
-                'css'   => array('custom.css'),
-                'js'    => array(),
+                'css'   => array('custom'),
+                'js'    => array('js/sweetalert.min', 'js/profile'),
                 'notif' => notification('S', false),
                 'user'  => $this->db->get_where('user', array('username' => $this->session->userdata('username'), 'flag' => 1))->row_array()
             );
@@ -67,18 +67,17 @@ class Profile extends CI_Controller
                 $extension = pathinfo($_FILES['photo']['name'], PATHINFO_EXTENSION);
                 $ex_name = explode(".", $_FILES['photo']['name']);
                 $ext = end($ex_name);
-                $new_name = $this->session->userdata('username') . '.' . $ext;
+                $new_name = $this->session->userdata('username') . date('Ymdhis') . '.' . $ext;
                 $config = array(
                     'upload_path'   => './assets/images',
                     'allowed_types' => 'jpg|jpeg|gif|png',
-                    'file_name'     => $new_name,
-                    'max_size'      => 2000
+                    'file_name'     => $new_name
                 );
 
                 $this->load->library('upload', $config);
 
                 if ($this->upload->do_upload('photo') && in_array($extension, $allowedExts)) {
-                    if ($_FILES['photo']['size'] >= 200000) {
+                    if ($_FILES['photo']['size'] >= 2097152) {
                         // Cek jika file lebih besar dari 2MB, balik ke halaman profile
                         $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Failed to upload profile picture, file should not be more than 2MB</div>');
                         action_log($this->session->userdata('username'), 'user', 'Upload Profile Picture', 'Error upload photo, maximum capacity 2MB');

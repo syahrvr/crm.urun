@@ -56,7 +56,7 @@
 
 <!-- Custom scripts for each pages-->
 <?php foreach ($js as $row) { ?>
-    <script src="<?php echo base_url('assets/') . $row; ?>"></script>
+    <script src="<?php echo base_url('assets/') . $row . '.js'; ?>"></script>
 <?php } ?>
 </body>
 

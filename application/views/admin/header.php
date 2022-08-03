@@ -22,7 +22,7 @@
 
     <link href="<?php echo base_url('assets'); ?>/css/sb-admin-2.css" rel="stylesheet">
     <?php foreach ($css as $row) { ?>
-        <link href="<?php echo base_url('assets/css/') . $row; ?>" rel="stylesheet">
+        <link href="<?php echo base_url('assets/css/') . $row . '.css'; ?>" rel="stylesheet">
     <?php } ?>
 
 </head>

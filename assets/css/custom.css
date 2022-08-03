@@ -48,3 +48,13 @@ label {
     background-color: #EAECF4 !important;
     padding-left: 0 !important;
 }
+
+.swal-button:not([disabled]) {
+    background-color: #4e73df !important;
+    border-radius: 10rem;
+}
+
+.swal-button:not([disabled]):hover {
+    background-color: #2e59d9 !important;
+    border-radius: 10rem;
+}

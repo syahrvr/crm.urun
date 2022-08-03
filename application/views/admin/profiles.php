@@ -61,7 +61,7 @@
                         <div class="form-group row">
                             <div class="col-sm-6 mb-3 mb-sm-0">
                                 <small class="text-primary font-weight-bold">Profile Picture</small>
-                                <input type="file" name="photo" value="<?php echo $user['photo']; ?>">
+                                <input type="file" id="file" name="photo" value="<?php echo $user['photo']; ?>" onchange="return fileValidation()">
                                 <small class="text-warning"><i class="fas fa-exclamation-triangle fa-fw"></i> File maximum 2MB</small> <br>
                                 <?php if (isset($error)) {
                                     echo $error;
@@ -90,7 +90,9 @@
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
-                    <img class="img-responsive" src="<?php echo base_url('assets/images/') . $user['photo']; ?>" />
+                    <div id="imagePreview">
+                        <img class="img-responsive" src="<?php echo base_url('assets/images/') . $user['photo']; ?>" />
+                    </div>
                     <hr>
                     <small style="font-style: italic;">
                         “Janganlah menyatakan diri kalian suci. Sesungguhnya Allah yang lebih tahu manakah yang baik di antara kalian.” (HR. Muslim no. 2142).
