@@ -61,7 +61,7 @@
                         <div class="form-group row">
                             <div class="col-sm-6 mb-3 mb-sm-0">
                                 <small class="text-primary font-weight-bold">Profile Picture</small>
-                                <input type="file" id="file" name="photo" value="<?php echo $user['photo']; ?>" onchange="return fileValidation()">
+                                <input type="file" class="file" id="file" name="photo" value="<?php echo $user['photo']; ?>" onchange="return fileValidation()">
                                 <small class="text-warning"><i class="fas fa-exclamation-triangle fa-fw"></i> File maximum 2MB</small> <br>
                                 <?php if (isset($error)) {
                                     echo $error;
